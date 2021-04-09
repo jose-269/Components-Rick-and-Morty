@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <h1 class="mainTitle pt-5 mb-5">Rick And Morty</h1>
+    <Personajes />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Personajes from "./components/Personajes.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    Personajes,
   },
 };
 </script>
@@ -22,7 +22,18 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: white;
+  // margin-top: 60px;
+}
+body {
+  margin: 0;
+  background-image: url(https://rickandmortypod.com/wp-content/uploads/2018/11/cropped-RM_page-header_background1-3.png);
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+  height: 100vh;
+  h1 {
+    margin: 0;
+  }
 }
 </style>
